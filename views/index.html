@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <title>File Metadata</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+     
+   </head>
+
+   <body>
+
+      <div class="container bg-light">
+        <h2 class="text-center">API Project: File Metadata Microservice</h2>
+        <p class="text-center">
+          You can submit a form object that includes a file upload. When you submit something, you will receive the file name, and size
+          in bytes within JSON response.
+        </p>
+        <div>
+          <form class="w-25 mx-auto" enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
+               <input type="file" class="mx-auto d-block" name="upfile">
+               <button class="w-75 mx-auto d-block" id="upload" type="submit" >Upload </button>
+          </form>
+        </div>
+      </div>
+   </body>
+
+
+</html>
